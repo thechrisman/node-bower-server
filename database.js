@@ -5,7 +5,7 @@ var Database = {
   model: null,
 
   init: function (cb) {
-    mongoose.connect('localhost', 'test');
+    mongoose.connect('localhost', 'bower');
     var db = mongoose.connection;
 
     mongoose.set('debug', true);
