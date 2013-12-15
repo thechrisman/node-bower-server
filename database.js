@@ -41,9 +41,9 @@ var Database = {
     this.model = mongoose.model('Package', this.schema);
   },
   createValidations: function () {
-    this.schema.path('url').validate(function (value) {
-      return value.match(/^git\:\/\//);
-    }, 'Invalid url');
+//    this.schema.path('url').validate(function (value) {
+//      return value.match(/^git\:\/\//);
+//    }, 'Invalid url');
   },
 
   all: function(cb) {
